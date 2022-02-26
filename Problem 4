@@ -1,0 +1,2 @@
+SELECT books.book_name, authors.first_name, authors.last_name, books.publish_date FROM authors, books 
+WHERE books.authors_id = authors.id AND books.publish_date BETWEEN '2021-01-01' AND '2021-01-31'ORDER BY books.publish_date DESC LIMIT 1 
