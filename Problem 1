@@ -1,0 +1,7 @@
+<?php
+  $jsondata = file_get_contents("jsonfile.json");
+  $jsondata2 = json_decode($jsondata, true);
+  $arrayoutput = array();
+  $arrayoutput = $jsondata2;
+  print_r($arrayoutput);
+?>
